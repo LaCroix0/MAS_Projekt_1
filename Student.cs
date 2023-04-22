@@ -33,10 +33,17 @@ public class Student
     
     public static void show()
     {
+
+        Console.WriteLine("Lista Studentów:");
+        Console.WriteLine("==================");
+        
         foreach (Student s in _StudExtent)
         {
             Console.WriteLine(s);
         }
+
+        Console.WriteLine("==================");
+        Console.WriteLine();
     }
 
     public override string ToString()

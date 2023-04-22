@@ -8,10 +8,17 @@ public class Department
     public static List<Department> _DeptExtent = new();
     public static void show()
     {
+        
+        Console.WriteLine("Lista Wydziałów:");
+        Console.WriteLine("==================");
+        
         foreach (Department w in _DeptExtent)
         {
             Console.WriteLine(w);
         }
+        
+        Console.WriteLine("==================");
+        Console.WriteLine();
     }
     
 

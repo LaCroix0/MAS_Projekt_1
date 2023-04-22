@@ -45,8 +45,12 @@ static void serializeObjects()
         PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
         Encoder = JavaScriptEncoder.Create(UnicodeRanges.All)
     };
-    var serialize = JsonSerializer.Serialize(Student._StudExtent, options) ;
-    File.WriteAllText(@"C:\\MAS_Projekt_1\\MAS_Projekt_1.csproj\\json.json", serialize);
+    File.WriteAllText(@"C:\MAS_Projekt_1\json.json", JsonSerializer.Serialize(Student._StudExtent, options));
+    
+    Console.WriteLine("==================");
+    Console.WriteLine("Serializacja udana");
+    Console.WriteLine("==================");
+    Console.WriteLine();
 }
 
 static void deserializeObjects()
@@ -57,8 +61,12 @@ static void deserializeObjects()
         PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
         Encoder = JavaScriptEncoder.Create(UnicodeRanges.All)
     };
-    var file = File.ReadAllText(@"C:\json.json");
-    List<Student> deserialize = JsonSerializer.Deserialize<List<Student>>(file, options);
+    JsonSerializer.Deserialize<List<Student>>(File.ReadAllText(@"C:\MAS_Projekt_1\json.json"), options);
+    
+    Console.WriteLine("==================");
+    Console.WriteLine("Deserializacja udana");
+    Console.WriteLine("==================");
+    Console.WriteLine();
 }
 
 

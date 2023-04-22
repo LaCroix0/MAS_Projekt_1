@@ -1,0 +1,46 @@
+[
+  {
+    "firstName": "Paweł",
+    "lastName": "Kowalski",
+    "address": {
+      "street": "Kasztanowa",
+      "houseNumber": 13,
+      "flatNumber": null,
+      "city": "Kobyłka",
+      "zipCode": "00-000"
+    },
+    "department": {
+      "address": {
+        "street": "Koszykowa",
+        "houseNumber": 86,
+        "flatNumber": null,
+        "city": "Warszawa",
+        "zipCode": "02-008"
+      },
+      "name": "Informatyki",
+      "studentCapacity": 300
+    }
+  },
+  {
+    "firstName": "Gaweł",
+    "lastName": "Nowak",
+    "address": {
+      "street": "Nowogrodzka",
+      "houseNumber": 9,
+      "flatNumber": 2,
+      "city": "Warszawa",
+      "zipCode": "00-001"
+    },
+    "department": {
+      "address": {
+        "street": "plac Politechniki",
+        "houseNumber": 1,
+        "flatNumber": null,
+        "city": "Warszawa",
+        "zipCode": "00-661"
+      },
+      "name": "Inżynierii procesów",
+      "studentCapacity": 200
+    }
+  }
+]

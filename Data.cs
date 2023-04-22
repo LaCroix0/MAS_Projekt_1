@@ -11,6 +11,13 @@ public class Data
             StudentCapacity = 300,
             Address = new Address("02-008", "Koszykowa", 86, "Warszawa")
         };
+
+        Department d2 = new()
+        {
+            Name = "Inżynierii procesów",
+            StudentCapacity = 200,
+            Address = new Address("00-661", "plac Politechniki", 1, "Warszawa")
+        };
         
         Student s1 = new Student
         {
@@ -26,14 +33,12 @@ public class Data
             FirstName = "Gaweł",
             LastName = "Nowak",
             Address = new Address("00-001", "Nowogrodzka", 9, 2,"Warszawa"),
-            Department = d1
+            Department = d2
         };
 
         Console.WriteLine("==================");
         Console.WriteLine("Studenci Stworzeni");
         Console.WriteLine("==================");
-        Console.WriteLine(s1);
-        Console.WriteLine(s2);
         Console.WriteLine();
     }
 }
